@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Title of your page</title>
+        <style>
+            .billSet{
+                display: flex;
+                flex-wrap:nowrap;
+                padding: 0 4px;
+            }
+            .billImage{
+                flex: 20%;
+                padding: 0px;
+            }
+            .billImage img{
+                margin-top: 8px;
+                vertical-align: middle;
+            }
+            .billImage p{
+                text-justify: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Count Your Moners</h1>
+
+        <button id="myButton">Count bills</button>
+
+        <input id="money" type="number" value="0"> Amount </input>
+
+        <div class="billSet">
+            <div class="billImage">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Obverse_of_the_series_2009_%24100_Federal_Reserve_Note.jpg" width="125" height="50"></img>
+                <p id="100">0 bills</p>
+            </div>
+            <div class="billImage">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/50_USD_Series_2004_Note_Front.jpg" width="125" height="50"></img>
+                <p id="50">0 bills</p>
+            </div>
+            <div class="billImage">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/US_%2420_Series_2006_Obverse.jpg/1200px-US_%2420_Series_2006_Obverse.jpg" width="125" height="50"></img>
+                <p id="20">0 bills</p>
+            </div>
+            <div class="billImage">
+                <img src="https://qph.fs.quoracdn.net/main-qimg-8593706631fdd4bd5b0b99ad72765450" width="125" height="50"></img>
+                <p id="10">0 bills</p>
+            </div>
+            <div class="billImage">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/US_%245_series_2003A_obverse.jpg/1200px-US_%245_series_2003A_obverse.jpg" width="125" height="50"></img>
+                <p id="5">0 bills</p>
+            </div>
+            <div class="billImage">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/US_one_dollar_bill%2C_obverse%2C_series_2009.jpg" width="125" height="50"></img>
+                <p id="1">0 bills</p>
+            </div>
+        </div>
+        <script>
+            let totalCash = 0;
+            let billsTemplate = [100, 50, 20, 10, 5, 1];
+            const moneyCounter = () => {
+                totalCash = parseInt(document.getElementById("money").value, 10);
+                for(let i = 0; i < billsTemplate.length; ++i)
+                {
+                    let str1 = billsTemplate[i].toString();
+                    let str2 = Math.floor(totalCash/billsTemplate[i]).toString();
+                    totalCash%=billsTemplate[i];
+                    document.getElementById(`${str1}`).innerHTML = `${str2} bills`;
+                }
+            }
+            
+            document.getElementById("myButton").addEventListener("click", moneyCounter);
+            
+        </script>
+    </body>
+</html>
