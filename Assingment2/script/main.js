@@ -12,12 +12,12 @@ const update = () => {
     
     if(index != 0 && tasks.length >=2)
     {
-      liElementContent += `<button class="up" id="+${index}">U</button>`;
+      liElementContent += `<button class="up" id="+${index}">↑</button>`;
       console.log(liElementContent);
     }
     if(index != tasks.length-1 && tasks.length >=2)
     {
-      liElementContent += `<button class="down" id="-${index}">D</button>`;
+      liElementContent += `<button class="down" id="-${index}">↓</button>`;
       console.log(liElementContent);
     }
     listElement.innerHTML = liElementContent;
