@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linela</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="list-container">
+            <div id="vitrina">
+            </div>
+            <div id="product-form">
+                <h3>New product</h3>
+                <p>Name<input type="text" id="inputName"></p>
+                <p>Description<input type="text" id="inputDescription" ></p>
+                <p>Price<input type="number" id="inputPrice" ></p>
+                <p>In Stock<input type="checkbox" id="inputStock"></p>
+                <button id="addProduct">Add product</button>
+            </div>
+        </div>
+        <div id="shoping-cart">
+            <h2>In the cart:</h2>
+            <ul id="itemsBought">
+            </ul>
+            <p id="totalPrice">Total Price: 0 $ </p>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
