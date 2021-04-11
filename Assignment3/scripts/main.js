@@ -83,10 +83,4 @@ const addToCart = (index)=>{
     updateShopingCart();
 }
 
-
-
-
-
-
-
 document.getElementById("addProduct").addEventListener("click", newProduct);

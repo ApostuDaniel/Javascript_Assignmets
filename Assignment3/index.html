@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linela</title>
+    <title>Shop</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <div class="container">
-        <div id="list-container">
-            <div id="vitrina">
+        <div class="auxiliary">
+            <div id="shoping-cart">
+                <h2>In the cart:</h2>
+                <ul id="itemsBought">
+                </ul>
+                <p id="totalPrice">Total Price: 0 $ </p>
             </div>
             <div id="product-form">
                 <h3>New product</h3>
-                <p>Name<input type="text" onclick="this.value=''" id="inputName"></p>
-                <p>Description<input type="text" onclick="this.value=''" id="inputDescription" ></p>
+                <p>Name<input type="text" id="inputName" onclick="this.value=''"></p>
+                <p>Description<input type="text" id="inputDescription" onclick="this.value=''"></p>
                 <p>Price<input type="number" id="inputPrice" ></p>
                 <p>In Stock<input type="checkbox" id="inputStock"></p>
                 <button id="addProduct">Add product</button>
             </div>
         </div>
-        <div id="shoping-cart">
-            <h2>In the cart:</h2>
-            <ul id="itemsBought">
-            </ul>
-            <p id="totalPrice">Total Price: 0 $ </p>
+        <div id="vitrina">
         </div>
     </div>
     <script src="scripts/main.js"></script>
