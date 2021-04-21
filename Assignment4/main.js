@@ -56,6 +56,12 @@ const reinitializeGraph = () =>{
     recoveredDay.id = "recovered-day"
     deadTotal.id = "dead-total"
     deadDay.id = "dead-day"
+    confirmedTotal.classList.add("graph")
+    confirmedDay.classList.add("graph")
+    recoveredTotal.classList.add("graph")
+    recoveredDay.classList.add("graph")
+    deadTotal.classList.add("graph")
+    deadDay.classList.add("graph")
     parent1.appendChild(confirmedTotal)
     parent1.appendChild(confirmedDay)
     parent2.appendChild(recoveredTotal)
