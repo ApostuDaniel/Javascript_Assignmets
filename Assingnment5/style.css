@@ -1,0 +1,59 @@
+body{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: fit-content;
+}
+
+div{
+    background-color: #282F66;
+    border-radius: 25px;
+}
+
+.itemvitrina{
+    background-color: #5760a0;
+    border-top-left-radius: 10px;
+    padding-right: 15px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.auxiliary{
+    padding-left: 15px;
+}
+
+#totalPrice{
+    font-weight: 600;
+    font-size: larger;
+    color: #F4A65E;
+}
+
+#addProduct{
+    width: 50%;
+}
+
+button:hover{
+    transition-duration: 500ms;
+    background-color:#F4A65E;
+    border: 2px solid white;
+    color: white; 
+}
+
+button{
+    border-radius: 10px;
+    transition-duration: 500ms;
+    font-weight: 500;
+    font-size: larger;
+    width: 15%;
+    height: 25%;
+    border: 2px solid #F4A65E ;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+h2, h3, h4{
+    color: #F4A65E;
+}
